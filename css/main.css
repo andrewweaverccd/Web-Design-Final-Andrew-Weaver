@@ -1,0 +1,462 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    }
+
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap');
+    
+html{
+    background-color: #FAF9F6;
+}
+
+/* ========== Global Styles ========== */
+    
+ul a{
+    margin-inline-end: auto;
+    padding-left: .5rem;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 1.5rem;
+    padding-right: 1rem;
+    min-height: 2rem;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-family: "Bellota Text", sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a:link, nav a:visited{
+    color: #191919;
+}
+
+nav a:hover, nav a:active{
+    color: #3C74A6;
+}
+
+/* menu dropdown */
+
+#dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+/*
+#dropdownContent{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    border: 5px solid #BF2121;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 25px;
+    padding: .5rem;
+    margin: .5rem;
+    gap: .2rem;
+}
+*/
+
+#dropdownContent {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    border: 5px solid #BF2121;  
+    min-width: 225px;
+    z-index: 1;
+    margin: -2px 0 0 0;
+    padding: 5px;
+    }
+
+#dropdown:hover #dropdownContent {
+    display: flex;
+    z-index: 9999;
+}
+
+.pageBreak{
+    min-width: fit-content;
+    height:20px;
+    background: #BF2121;
+}
+
+/* ========== Specific Styles Home - Top ========== */
+
+#homeTopContents{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 5%;
+}
+
+#homeCTABox{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    height: 25rem;
+    background-color: #f2edd5;
+    border: 7px solid #BF2121;
+    border-radius: 25px;
+}
+
+#homeCTAContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#homeCTAContent h1{
+    font-family: "Bellota Text", sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+#homeCTAContent ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-family: "Bellota Text", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    gap: 8rem;
+}
+
+.homeCTAButtons a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+    height: 5rem;
+    width: 10rem;
+    background-color: #BF2121;
+    color: #FAF9F6;
+    border-radius: 25px;
+}
+
+#heroImage{
+    width: 45%;
+    padding: 5%;    
+}
+
+/* ========== Specific Styles Home - Bottom ========== */
+
+#homeBottomContents{
+    display: flex;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    gap: 3rem;
+}
+
+#locationAndHours{
+    display: flex;
+    flex-direction: column;
+    min-width: 35%;
+    padding-top: rem;
+    padding-left: 6rem;
+    padding-right: 7rem;
+}
+
+#locationAndHoursFont{
+    font-family: "Bellota Text", sans-serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+#lineBreak{
+
+    max-width:none;
+    height:.5rem;
+    background: #BF2121;
+
+}
+
+.locationAndHoursInfo{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    padding-top: 0.5rem;
+    align-items: center;
+    gap: 5px;
+
+    /* text styles */
+
+    font-family: "Antic Slab", serif;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+#homeQuoteBox{
+    display: flex;
+    max-width: 35rem;
+    min-height: 20rem;
+    padding-inline: 1rem;
+    background-color: #f2edd5;
+    border: 7px solid #BF2121;
+    border-radius: 25px;
+}
+
+#homeQuoteContent{
+    align-content: center;
+
+    /* text styles */
+
+    font-family: "Bellota Text", sans-serif;
+    font-weight: 700;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+/* ========== Specific Styles Menu ========== */
+
+#menuNavSelected{
+    background-color: #BF2121;
+    color: #FAF9F6;
+    padding-inline: 1rem;
+    border-radius: 25px;
+}
+
+#menuHeaderFont{
+    text-align: center;
+    padding-top: 2rem;
+
+/* text styles */
+
+    font-family: "Bellota Text", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+#menuLineBreak{
+    margin: 0 auto;
+    max-width: 30rem;
+    height: 13px;
+    background: #BF2121;
+}
+
+.menuRow{
+    display: flex;
+    display: flex;
+    justify-content: center;
+    gap: 12rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+}
+
+.menuRow ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 60rem;
+    column-gap: 13rem;
+    row-gap: 5rem;
+
+}
+
+.menuRow ul li {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    background-size: cover;
+    min-width: 23rem;
+    min-height: 23rem;
+    border-radius: 25px;
+}
+
+.menuRow ul li a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-width: 23rem;
+    min-height: 23rem;
+    border-radius: 25px;
+    background-size: cover  ;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* text styles */
+
+    font-family: "Bellota Text", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+    color: #FAF9F6;
+}
+
+
+#breakfastButton{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/Menu/breakfast.jpg);
+}
+
+#burritosButton{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/Menu/Burritos.jpg);
+}
+
+#tacosButton{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/Menu/Tacos.jpg);
+}
+
+#quesadillasButton{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/Menu/Quesadillas.jpg);
+}
+
+#enchiladasButton{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/Menu/Enchiladas.webp);
+}
+
+#tostadasButton{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/Menu/Tostadas.jpg);
+}
+
+#tortasButton{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/Menu/Tortas.webp);
+}
+
+#comboButton{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/Menu/Combo\ Plate.jpg);
+}
+
+#specialsButton{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/Menu/Specials.jpg);
+}
+
+#sidesButton{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/Menu/Sides.jpg);
+}
+
+#dessertButton{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/Menu/Dessert.jpg);
+}
+
+#drinksButton{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/Menu/Drinks.jpg);
+}
+
+/* hover state */
+
+.menuRow ul li a:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ) !important;
+}
+
+
+/* ========== Specific Styles Breakfast ========== */
+
+#breakfastTitle{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+  
+#breakfastHeaderFont{
+    text-align: left;
+    padding-top: 2rem;
+
+    /* text styles */
+
+    font-family: "Bellota Text", sans-serif;
+    font-weight: 700;
+    font-size: 6rem;
+}
+
+#breakfastLineBreak{
+    max-width: 25rem;
+    height: 13px;
+    background: #BF2121;
+}
+
+.descriptionStyle{
+    font-family: "Antic Slab", serif;
+    font-style: normal;
+    font-size: 1.2rem;
+    padding-left: 5rem;
+    padding-top: 1rem;
+}
+
+.menuFlexbox{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.menuSection{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    width: 55%;
+}
+
+.sectionFont{
+
+    text-align: left;
+    padding-top: 2rem;
+
+    /* text styles */
+
+    font-family: "Bellota Text", sans-serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+
+.subheaderStyle{
+    font-family: "Antic Slab", serif;
+    font-style: normal;
+    font-size: 1.2rem;
+    padding-bottom: .5rem;
+}
+
+.menuDishAndPrice{
+    display: flex;
+    flex-wrap: nowrap;
+    text-wrap: nowrap;
+    max-width: 55rem;
+}
+
+.dishTitle{
+    font-family: "Antic Slab", serif;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+.dishTitleNoDescrtiption{
+    font-family: "Antic Slab", serif;
+    font-style: normal;
+    font-size: 2rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.dishLineBreak{
+    max-width: 55rem;
+    height: 5px;
+    background: #3C74A6;
+}
+
+.menuImage{
+    width: 40%;
+    height: 25%;
+    padding: 5%;
+}
+
+#bottomPadding{
+    padding-top: 3rem;
+}
